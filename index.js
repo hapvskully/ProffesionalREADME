@@ -2,24 +2,28 @@
 var inquirer = require("inquirer");
 var fs = require("fs")
 var path = require("path");
+const Choices = require("inquirer/lib/objects/choices");
 var generateMarkdown = "./utils/generateMarkdown";
-
 
 // TODO: Create an array of questions for user input
 async function questions(){
-const response = await inquirer.prompt(
+const prompt = await inquirer.prompt(
     [
-        { message: ""},
-        { message: ""},
-        { message: ""}
+        { message: "What is your Github username?", name: "Github"},
+        { message: "What is your email?", name: "Email"},
+        { message: "What is the name of your project?", name: "title"},
+        { message: "Please describe your project breifly", name: "Description"},
+    
+        {
+        type: 'list',
+        name: 'chooseLicense',
+        message: 'Which license would you like to use?',
+        choices: ['GNU GPL v3', 'MIT', 'ISC'],}
     ]
-)}
-console.log("got responses??!")
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
-init();
+)
+console.log(prompt)
+fs.writeFileSync('README.md', generateMarkdown(prompt));
+questions()
+}
