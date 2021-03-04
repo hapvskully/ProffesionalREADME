@@ -1,4 +1,4 @@
-# README generator
+# f
 
   ## Table Of Contents
 
@@ -9,13 +9,13 @@
   * [Questions](##Questions?)
 
 ## Github: 
-hapvskully
+f
 
 ## Email:
-hapv1006@gmail.com
+f
 
 ## Description
-I want a readme generator to ask the user the title, email, github, description, and license, and as well make a table of contents. 
+
 
 ## Questions?
 
@@ -23,6 +23,6 @@ you can email me if you have and questions or concerns at: hapv1006@gmail.com
 
 ## License
   
-The license that has been provided is an MIT license follow the link below:
+The license that has been provided is an GNU GPL v3 license follow the link below:
   
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
