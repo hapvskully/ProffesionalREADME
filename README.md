@@ -1,4 +1,12 @@
-# Cool README Generator
+# README generator
+
+  ## Table Of Contents
+
+  * [Github](##Github:)
+  * [Email](##Email:)
+  * [Description](##Description:)
+  * [License](##License)
+  * [Questions](##Questions?)
 
 ## Github: 
 hapvskully
@@ -7,10 +15,14 @@ hapvskully
 hapv1006@gmail.com
 
 ## Description
-I want a README generator with prompts to ask the user their, github, email, a title, description, and what license they'd like to use. 
+I want a readme generator to ask the user the title, email, github, description, and license, and as well make a table of contents. 
+
+## Questions?
+
+you can email me if you have and questions or concerns at: hapv1006@gmail.com
 
 ## License
   
-The license that has been provided is an ISC license follow the link below:
+The license that has been provided is an MIT license follow the link below:
   
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

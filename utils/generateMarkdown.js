@@ -44,6 +44,14 @@ function generateMarkdown(data) {
   //return the title, github, email, description, and license
   return `# ${data.title}
 
+  ## Table Of Contents
+
+  * [Github](##Github:)
+  * [Email](##Email:)
+  * [Description](##Description:)
+  * [License](##License)
+  * [Questions](##Questions?)
+
 ## Github: 
 ${data.Github}
 
@@ -52,6 +60,10 @@ ${data.Email}
 
 ## Description
 ${data.Description}
+
+## Questions?
+
+you can email me if you have and questions or concerns at: hapv1006@gmail.com
 
 ${licenseSection}
 `;
