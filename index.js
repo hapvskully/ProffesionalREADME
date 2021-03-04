@@ -3,7 +3,7 @@ var inquirer = require("inquirer");
 var fs = require("fs")
 var path = require("path");
 const Choices = require("inquirer/lib/objects/choices");
-var generateMarkdown = "./utils/generateMarkdown";
+var generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 async function questions(){
@@ -24,6 +24,8 @@ const prompt = await inquirer.prompt(
 
 )
 console.log(prompt)
-fs.writeFileSync('README.md', generateMarkdown(prompt));
-questions()
+fs.writeFileSync('README.md', generateMarkdown(prompt), err=>{
+    if (err) throw err;
+});
 }
+questions()
